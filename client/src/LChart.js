@@ -2,10 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import Chart from "chart.js/auto";
 import { io } from "socket.io-client";
-import "./Chart.css";
+import "./LChart.css";
 import zoomPlugin from "chartjs-plugin-zoom";
 
-const Chart = () => {
+const LChart = () => {
   const chartRef = useRef();
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -121,7 +121,7 @@ const Chart = () => {
 
   return (
     <div className="container">
-      <canvas ref={chartRef} style={{ width: "100%", height: "100px" }} />;
+      <canvas ref={chartRef} style={{ width: "100%", height: "100px" }} />
       <div className="btns">
         <button onClick={handleResetZoom} className="resetButton">
           Reset Zoom
@@ -151,4 +151,4 @@ const Chart = () => {
   );
 };
 
-export default Chart;
+export default LChart;

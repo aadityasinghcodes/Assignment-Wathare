@@ -1,11 +1,11 @@
 import React from "react";
-import Chart from "./Chart";
+import LChart from "./LChart";
 
 const App = () => {
   return (
     <div>
       <h1> Chart</h1>
-      <Chart />
+      <LChart />
     </div>
   );
 };
